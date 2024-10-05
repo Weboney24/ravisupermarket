@@ -4,7 +4,7 @@ import { IMAGE_HELPER } from "../../helper/ImageHelper";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center !font-sec_para bg-gradient-to-tr !text-white from-primary to-secondary rounded p-10">
+      <footer className="footer footer-center w-full !font-sec_para bg-gradient-to-tr !text-white from-primary to-secondary rounded p-10">
         <div>
           <Link to="/">
             <img

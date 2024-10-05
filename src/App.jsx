@@ -1,11 +1,21 @@
-import Navbar from "./component/navbar/Navbar";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"; // Import the Home component
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Single route for Home page */}
+      </Routes>
+    </Router>
   );
-};
+}
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

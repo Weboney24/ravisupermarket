@@ -8,12 +8,18 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Testimonial from "./pages/Testimonial";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={< Home/> }>
-      {/* ... etc. */}
-    </Route>
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/testimonial" element={<Testimonial />} />
+    </>
   )
 );
 

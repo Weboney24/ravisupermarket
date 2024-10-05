@@ -45,11 +45,25 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="default_header px-20 flex items-center justify-center bg-fixed  bg-[linear-gradient(to_right,#ffffffc4,#ffffffc4),url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg?t=st=1728102681~exp=1728106281~hmac=a58cfadb7488e798c5cff8492208ecdc03bbc5739920eed75296d9abdafb5e89&w=826')] bg-cover bg-no-repeat bg-center">
+    <div className="default_header px-4 sm:px-6 lg:px-20 flex flex-col items-center justify-center bg-fixed bg-[linear-gradient(to_right,#ffffffc4,#ffffffc4),url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg')] bg-cover bg-no-repeat bg-center">
       <DefaultHeader title={"Our Gallery"} subTitle={"Explore Our Gallery"} />
       <Swiper
-        slidesPerView={3}
-        spaceBetween={20}
+        slidesPerView={1}
+        spaceBetween={10}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -57,11 +71,11 @@ const Gallery = () => {
         loop={true}
         pagination={{ clickable: true }}
         modules={[Pagination, Navigation, Autoplay]}
-        className="text-center !w-full"
+        className="text-center w-full"
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="card bg-base-100 w-96 h-[500px] shadow-xl rounded-none">
+            <div className="card bg-base-100 w-full h-[500px] sm:w-80 lg:w-96 shadow-xl rounded-none">
               <figure>
                 <img
                   src={item.img}
@@ -69,10 +83,10 @@ const Gallery = () => {
                   className="w-full h-56 object-cover"
                 />
               </figure>
-              <div className="card-body text-left rounded-none">
-                <h2 className="card-title">{item.title}</h2>
-                <p>{item.description}</p>
-                <div className="card-actions">
+              <div className="card-body text-left rounded-none p-4 sm:p-6">
+                <h2 className="card-title text-lg sm:text-xl">{item.title}</h2>
+                <p className="text-sm sm:text-base">{item.description}</p>
+                <div className="card-actions mt-4">
                   <button className="btn btn-primary">Buy Now</button>
                 </div>
               </div>

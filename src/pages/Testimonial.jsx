@@ -44,6 +44,24 @@ const Testimonial = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
           loop={true}
           pagination={{
             clickable: true,
@@ -54,7 +72,7 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="p-8 bg-white !shadow-2xl border-primary hover:bg-primary hover:text-white group border-2 rounded-lg text-center">
+              <div className="p-8 sm:px-4 h-96 bg-white !shadow-2xl border-primary hover:bg-primary hover:text-white group border-2 rounded-lg text-center">
                 <div className="avatar mb-4">
                   <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
                     <img src={testimonial.image} alt={testimonial.name} />

@@ -13,21 +13,21 @@ const Home = () => {
         <div className=""></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-screen-lg flex items-center flex-col justify-center bg-[#173e6ba4] p-6">
-            <h1 className="mb-5 text-7xl tracking-tight font-semibold font-pri_head">
+            <h1 className="mb-5 lg:text-7xl md:text-5xl text-2xl tracking-tight font-semibold font-pri_head">
               Ravi&apos;s <span className="text-yellow-400">Super Market</span>
             </h1>
-            <p className="mb-8 text-4xl font-sec_para">
+            <p className="mb-8 lg:text-4xl md:text-xl font-sec_para">
               <span className="text-yellow-400">20,000</span> Products All In
               One Roof
             </p>
           </div>
         </div>
       </div>
-      <div className="px-20 w-screen">
+      <div className="lg:px-20 w-full">
         <About />
       </div>
       <Gallery />
-      <div className="px-20 w-screen">
+      <div className="lg:px-20 w-full">
         <Testimonial />
       </div>
 

@@ -13,7 +13,7 @@ const Navbar = () => {
   const closeDropdown = () => setDropdownOpen(false);
 
   return (
-    <div className="navbar bg-base-100 px-5 lg:px-20 fixed top-0 z-50 shadow-md w-full">
+    <div className="navbar bg-base-100 px-5 lg:px-20 fixed top-0 z-50 shadow-md lg:w-full">
       {/* Start of Navbar */}
       <div className="navbar-start">
         {/* Dropdown for mobile screens */}
