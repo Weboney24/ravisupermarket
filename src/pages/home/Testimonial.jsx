@@ -3,7 +3,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import DefaultHeader from "../component/DefaultHeader";
+import DefaultHeader from "../../component/DefaultHeader";
 
 const testimonials = [
   {
@@ -40,7 +40,7 @@ const Testimonial = () => {
   return (
     <div className="default_header">
       <DefaultHeader title={"Testimonial"} subTitle={" What Customers Say"} />
-      <div className="w-full pt-4 ">
+      <div className="w-full pt-4 px-4">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -72,7 +72,7 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="p-8 sm:px-4 h-96 bg-white !shadow-2xl border-primary hover:bg-primary hover:text-white group border-2 rounded-lg text-center">
+              <div className="p-8 sm:px-4 h-[420px] bg-white !shadow-2xl border-primary hover:bg-primary hover:text-white group border-2 rounded-lg text-center">
                 <div className="avatar mb-4">
                   <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
                     <img src={testimonial.image} alt={testimonial.name} />

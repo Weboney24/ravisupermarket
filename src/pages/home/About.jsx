@@ -1,7 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import DefaultHeader from "../component/DefaultHeader";
+import DefaultHeader from "../../component/DefaultHeader";
 import { Image } from "antd";
 
 const About = () => {

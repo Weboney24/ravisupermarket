@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import DefaultHeader from "../component/DefaultHeader";
+import DefaultHeader from "../../component/DefaultHeader";
 
 const Gallery = () => {
   const items = [
@@ -45,7 +45,10 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="default_header px-4 sm:px-6 lg:px-20 flex flex-col items-center justify-center bg-fixed bg-[linear-gradient(to_right,#ffffffc4,#ffffffc4),url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg')] bg-cover bg-no-repeat bg-center">
+    <section
+      id="gallery"
+      className="default_header px-4 sm:px-6 lg:px-20 flex flex-col items-center justify-center bg-fixed bg-[linear-gradient(to_right,#ffffffc4,#ffffffc4),url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg')] bg-cover bg-no-repeat bg-center"
+    >
       <DefaultHeader title={"Our Gallery"} subTitle={"Explore Our Gallery"} />
       <Swiper
         slidesPerView={1}
@@ -95,7 +98,7 @@ const Gallery = () => {
         ))}
         <div className="pt-16"></div>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

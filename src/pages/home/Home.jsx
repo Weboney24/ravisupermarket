@@ -1,16 +1,19 @@
-import Footer from "../component/footer/Footer";
-import Navbar from "../component/navbar/Navbar";
-import About from "./About";
+import Footer from "../../component/footer/Footer";
+import Navbar from "../../component/navbar/Navbar";
 import Gallery from "./Gallery";
+import Contact from "./Contact";
 import Testimonial from "./Testimonial";
+import About from "./About";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
 
-      <div className="hero brightness-150 pt-20 min-h-screen bg-fixed bg-[linear-gradient(to_right,#00000080,#00000080),url('https://img.freepik.com/premium-photo/grocery-aisle-with-shelf-full-cereals_1146701-16845.jpg?w=740')] bg-cover bg-center object-cover ">
-        <div className=""></div>
+      <section
+        id="home"
+        className="hero brightness-150 pt-20 min-h-screen bg-fixed bg-[linear-gradient(to_right,#00000080,#00000080),url('https://img.freepik.com/premium-photo/grocery-aisle-with-shelf-full-cereals_1146701-16845.jpg?w=740')] bg-cover bg-center object-cover"
+      >
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-screen-lg flex items-center flex-col justify-center bg-[#173e6ba4] p-6">
             <h1 className="mb-5 lg:text-7xl md:text-5xl text-2xl tracking-tight font-semibold font-pri_head">
@@ -22,13 +25,20 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
+
       <div className="lg:px-20 w-full">
         <About />
       </div>
+
       <Gallery />
+
       <div className="lg:px-20 w-full">
         <Testimonial />
+      </div>
+
+      <div className="lg:px-20 w-full">
+        <Contact />
       </div>
 
       <Footer />

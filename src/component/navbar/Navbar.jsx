@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { IMAGE_HELPER } from "../../helper/ImageHelper";
 
 const Navbar = () => {
@@ -62,65 +62,113 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="/" onClick={closeDropdown}>
+                <ScrollLink
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  onClick={closeDropdown}
+                >
                   Home
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="/about" onClick={closeDropdown}>
+                <ScrollLink
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  onClick={closeDropdown}
+                >
                   About
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="/gallery" onClick={closeDropdown}>
+                <ScrollLink
+                  to="gallery"
+                  smooth={true}
+                  duration={500}
+                  onClick={closeDropdown}
+                >
                   Gallery
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link to="/testimonial" onClick={closeDropdown}>
+                <ScrollLink
+                  to="testimonial"
+                  smooth={true}
+                  duration={500}
+                  onClick={closeDropdown}
+                >
                   Testimonial
-                </Link>
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  onClick={closeDropdown}
+                >
+                  Contact
+                </ScrollLink>
               </li>
             </ul>
           )}
         </div>
 
         {/* Logo */}
-        <Link to="/" onClick={closeDropdown}>
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={500}
+          onClick={closeDropdown}
+        >
           <img
             className="w-36 lg:w-52"
             src={IMAGE_HELPER.RavisLogo}
             alt="Ravi's Logo"
           />
-        </Link>
+        </ScrollLink>
       </div>
 
       {/* Center of Navbar */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu text-lg font-semibold menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
+            <ScrollLink to="home" smooth={true} duration={500}>
+              Home
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <ScrollLink to="about" smooth={true} duration={500}>
+              About
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/gallery">Gallery</Link>
+            <ScrollLink to="gallery" smooth={true} duration={500}>
+              Gallery
+            </ScrollLink>
           </li>
           <li>
-            <Link to="/testimonial">Testimonial</Link>
+            <ScrollLink to="testimonial" smooth={true} duration={500}>
+              Testimonial
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="contact" smooth={true} duration={500}>
+              Contact
+            </ScrollLink>
           </li>
         </ul>
       </div>
 
       {/* Call Now Button */}
       <div className="navbar-end">
-        <Link
-          to="tel:09655597039"
+        <a
+          href="tel:09655597039"
           className="btn btn-sm bg-red-500 text-white lg:btn-md"
         >
           Call Now
-        </Link>
+        </a>
       </div>
     </div>
   );
