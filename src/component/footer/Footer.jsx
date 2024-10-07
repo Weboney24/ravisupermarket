@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IMAGE_HELPER } from "../../helper/ImageHelper";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -14,20 +15,35 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <nav className="grid grid-flow-col gap-4">
-          <Link to="/" className="link link-hover">
-            Home
-          </Link>
-          <Link to="/about" className="link link-hover">
-            About
-          </Link>
-          <Link to="/gallery" className="link link-hover">
-            Gallery
-          </Link>
-          <Link to="/contact" className="link link-hover">
-            Contact
-          </Link>
-        </nav>
+        <div className="lg:navbar-center lg:flex">
+          <ul className="menu text-lg font-semibold menu-horizontal px-1 flex-col">
+            <li>
+              <ScrollLink to="home" smooth={true} duration={500}>
+                Home
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="about" smooth={true} duration={500}>
+                About
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="gallery" smooth={true} duration={500}>
+                Gallery
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="testimonial" smooth={true} duration={500}>
+                Testimonial
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink to="contact" smooth={true} duration={500}>
+                Contact
+              </ScrollLink>
+            </li>
+          </ul>
+        </div>
         <nav>
           <div className="grid grid-flow-col gap-4">
             <Link>

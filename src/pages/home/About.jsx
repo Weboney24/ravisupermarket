@@ -1,5 +1,4 @@
-import { FaFacebook } from "react-icons/fa";
-import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import DefaultHeader from "../../component/DefaultHeader";
 import { Image } from "antd";
@@ -43,18 +42,11 @@ const About = () => {
               <FaFacebook className="text-4xl border lg:p-2 p-1  rounded-full text-white bg-blue-500" />
             </Link>
             <Link
-              href="https://facebook.com"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaXTwitter className="text-4xl border lg:p-2 p-1 rounded-full text-white bg-blue-500" />
-            </Link>
-            <Link
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaYoutube className="text-4xl border lg:p-2 p-1 rounded-full text-white bg-blue-500" />
+              <FaInstagram className="text-4xl border lg:p-2 p-1 rounded-full text-white bg-blue-500" />
             </Link>
           </div>
         </div>

@@ -31,7 +31,6 @@ const Contact = () => {
   const onFinish = (values) => {
     console.log("Received values: ", values);
     message.success("Your message has been sent!");
-    // Here you can handle the form submission (e.g., send to an API)
   };
 
   return (
@@ -43,7 +42,7 @@ const Contact = () => {
         }
       />
       <div className="lg:w-full lg:flex lg:pb-20">
-        <div className="lg:w-[50%] flex flex-col items-center">
+        <div className="lg:w-[50%] flex flex-col items-center pb-8">
           {contactInfo.map((info, index) => (
             <div className="pt-6 pl-4 pr-4" key={index}>
               <fieldset className="border border-gray-300 rounded-lg p-5 lg:w-[500px] w-[280px]">
@@ -73,7 +72,7 @@ const Contact = () => {
             </div>
           ))}
         </div>
-        <div className="lg:w-[50%] bg-gray-200 rounded shadow-md flex justify-center pt-8">
+        <div className="lg:w-[50%] bg-gray-200 rounded shadow-md flex justify-center pt-10 mb-10">
           <Form
             name="contact"
             layout="vertical"
@@ -126,7 +125,7 @@ const Contact = () => {
           </Form>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full pt-6">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0528852798197!2d78.0773475737776!3d10.959377855795013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2fba64f3d3f3%3A0xec8d7df2ac24ce9b!2sRavis%20Super%20Market!5e0!3m2!1sen!2sin!4v1728281549522!5m2!1sen!2sin"
           className="w-full h-[400px]"
