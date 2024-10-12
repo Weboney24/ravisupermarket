@@ -38,7 +38,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section id="tesimonial" className="default_header">
+    <section id="testimonial" className="default_header">
       <DefaultHeader title={"Testimonial"} subTitle={" What Customers Say"} />
       <div className="w-full pt-4 px-4">
         <Swiper

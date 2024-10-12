@@ -47,8 +47,9 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="default_header px-4 sm:px-6 lg:px-20 flex flex-col items-center justify-center bg-fixed bg-[linear-gradient(to_right,#ffffffc4,#ffffffc4),url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg')] bg-cover bg-no-repeat bg-center"
+      className="relative default_header px-4 sm:px-6 lg:px-20 flex flex-col items-center justify-center bg-fixed  bg-cover bg-no-repeat bg-center"
     >
+      <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-vector/people-supermarket-interior-cartoon-vector_1441-3096.jpg')] opacity-20 bg-cover bg-no-repeat"></div>
       <DefaultHeader title={"Our Gallery"} subTitle={"Explore Our Gallery"} />
       <Swiper
         slidesPerView={1}

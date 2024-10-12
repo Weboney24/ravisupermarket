@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { IMAGE_HELPER } from "../../helper/ImageHelper";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to handle dropdown visibility
@@ -163,12 +164,12 @@ const Navbar = () => {
 
       {/* Call Now Button */}
       <div className="navbar-end">
-        <a
-          href="tel:09655597039"
+        <Link
+          to="tel:9655597039"
           className="btn btn-sm bg-red-500 text-white lg:btn-md"
         >
           Call Now
-        </a>
+        </Link>
       </div>
     </div>
   );

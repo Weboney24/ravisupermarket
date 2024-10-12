@@ -1,3 +1,7 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+import { Button } from "antd";
+import { WhatsAppOutlined } from "@ant-design/icons";
 import Footer from "../../component/footer/Footer";
 import Navbar from "../../component/navbar/Navbar";
 import Gallery from "./Gallery";
@@ -42,6 +46,26 @@ const Home = () => {
       </div>
 
       <Footer />
+
+      {/* WhatsApp Icon */}
+      <div className="fixed bottom-4 right-4">
+        <a
+          href="https://wa.me/9655597039"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            shape="circle"
+            icon={<WhatsAppOutlined />}
+            size="large"
+            style={{
+              backgroundColor: "#25D366",
+              color: "white",
+              border: "none",
+            }}
+          />
+        </a>
+      </div>
     </div>
   );
 };
