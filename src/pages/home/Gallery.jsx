@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import DefaultHeader from "../../component/DefaultHeader";
+import { IMAGE_HELPER } from "../../helper/ImageHelper";
 
 const Gallery = () => {
   const items = [
@@ -37,10 +38,28 @@ const Gallery = () => {
         "Keep the little ones entertained with our selection of fun and educational toys and games, fostering creativity and playtime at Ravi's Super Market.",
     },
     {
-      img: "https://img.freepik.com/premium-photo/drivethru-fast-food-restaurant-with-customers-ordering_1079150-292312.jpg?w=740",
+      img: IMAGE_HELPER.FoodCourtImage,
       title: "Delicious Food Court",
       description:
         "Enjoy a variety of quick and tasty fast food options at Ravi's Super Market, perfect for when you're on the go or craving a quick snack. From savory snacks to satisfying meals, we've got something for everyone!",
+    },
+    {
+      img: IMAGE_HELPER.PlayAreaImage,
+      title: "Fun-Filled Play Area",
+      description:
+        "Let your kids enjoy a safe and exciting space at our dedicated play area in Ravi's Super Market. Perfect for children to have fun while you shop with ease!",
+    },
+    {
+      img: "https://img.freepik.com/premium-photo/143-closeup-wellorganized-fresh-fruit-section-supermarket-with-refrigerated-shelves-clear-signage_1292484-11189.jpg?w=826",
+      title: "Fruits",
+      description:
+        "Discover a wide selection of fresh, ripe fruits at Ravi's Super Market. From seasonal favorites to exotic varieties, our fruits are perfect for a healthy snack or to add flavor to your meals!",
+    },
+    {
+      img: "https://img.freepik.com/premium-photo/variety-organic-vegetables-supermarket_1295366-72111.jpg?w=740",
+      title: "Vegetables",
+      description:
+        "Explore a wide variety of farm-fresh vegetables at Ravi's Super Market. Perfect for all your cooking needs, our vegetables are picked daily to ensure quality and freshness in every bite!",
     },
   ];
 

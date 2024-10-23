@@ -35,24 +35,20 @@ const About = () => {
 
           <div className="flex space-x-4 pt-4 px-5 lg:px-0">
             <Link
-              to="https://facebook.com"
+              to="https://www.facebook.com/RavisSmartShoppe/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebook className="text-4xl border lg:p-2 p-1  rounded-full text-white bg-primary" />
             </Link>
             <Link
-              to="https://www.instagram.com/"
+              to="https://www.instagram.com/ravis_supermarket_krr/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram className="text-4xl border lg:p-2 p-1 rounded-full text-white bg-primary" />
             </Link>
-            <Link
-              to="https://wa.me/9655597039"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="https://wa.me/9655597039" rel="noopener noreferrer">
               <FaWhatsapp className="text-4xl border lg:p-2 p-1 rounded-full text-white bg-primary" />
             </Link>
           </div>

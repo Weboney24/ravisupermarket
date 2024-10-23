@@ -48,11 +48,15 @@ const Footer = () => {
 
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <Link>
+            <Link
+              to="https://www.facebook.com/RavisSmartShoppe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook size="25px" />
             </Link>
             <Link
-              to="https://www.instagram.com"
+              to="https://www.instagram.com/ravis_supermarket_krr/"
               target="_blank"
               rel="noopener noreferrer"
             >

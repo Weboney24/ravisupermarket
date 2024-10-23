@@ -133,7 +133,7 @@ const Navbar = () => {
 
       {/* Center of Navbar */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu text-lg font-semibold menu-horizontal px-1">
+        <ul className="menu text-lg font-pri_head font-semibold menu-horizontal px-1">
           <li>
             <ScrollLink to="home" smooth={true} duration={500}>
               Home
@@ -165,10 +165,10 @@ const Navbar = () => {
       {/* Call Now Button */}
       <div className="navbar-end">
         <Link
-          to="tel:9655597039"
-          className="btn btn-sm bg-red-500 text-white lg:btn-md"
+          to="https://wa.me/9655597039"
+          className="btn btn-sm bg-red-500 hover:bg-[#6F94B7] text-white lg:btn-md"
         >
-          Call Now
+          Whatsapp Order
         </Link>
       </div>
     </div>
