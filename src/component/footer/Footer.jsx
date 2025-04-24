@@ -9,11 +9,7 @@ const Footer = () => {
       <footer className="footer footer-center w-full !font-sec_para bg-gradient-to-tr !text-white from-primary to-secondary rounded p-10">
         <div>
           <Link to="/">
-            <img
-              src={IMAGE_HELPER.RavisLogo}
-              alt="Ravi's Logo"
-              className="w-60 bg-white"
-            />
+            <img src={IMAGE_HELPER.RavisLogo} alt="Ravi's Logo" className="w-60 bg-white" />
           </Link>
         </div>
         <div className=" w-full h-auto">
@@ -48,18 +44,10 @@ const Footer = () => {
 
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <Link
-              to="https://www.facebook.com/RavisSmartShoppe/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="https://m.facebook.com/RavisSmartShoppe" target="_blank" rel="noopener noreferrer">
               <FaFacebook size="25px" />
             </Link>
-            <Link
-              to="https://www.instagram.com/ravis_supermarket_krr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="https://www.instagram.com/ravis_supermarket_krr/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size="25px" />
             </Link>
             <Link to="https://wa.me/9655597039" target="_blank">
@@ -69,13 +57,8 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            &nbsp;
-            <Link
-              target="_blank"
-              to="https://weboney.in/"
-              className="!font-medium"
-            >
+            Copyright © {new Date().getFullYear()} - All right reserved by &nbsp;
+            <Link target="_blank" to="https://weboney.in/" className="!font-medium">
               Weboney Designs
             </Link>
           </p>
